@@ -15,7 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Products\Commands\Create\" />
     <Folder Include="Features\Products\Commands\Delete\" />
     <Folder Include="Features\Products\Commands\Update\" />
   </ItemGroup>
