@@ -1,9 +1,13 @@
+using System.Reflection;
 using CQRS_with_MediatR.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>();
+//Register the Mediator Pattern using the MediatR Library
+builder.Services.AddMediatR(cfg=>cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+
 
 
 builder.Services.AddControllers();
