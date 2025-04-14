@@ -18,7 +18,6 @@
     <Folder Include="Features\Products\Commands\Create\" />
     <Folder Include="Features\Products\Commands\Delete\" />
     <Folder Include="Features\Products\Commands\Update\" />
-    <Folder Include="Features\Products\Queries\Get\" />
   </ItemGroup>
 
 </Project>
