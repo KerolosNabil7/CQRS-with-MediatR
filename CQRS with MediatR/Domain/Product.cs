@@ -11,6 +11,7 @@
         private Product() { }
         public Product(string name, string description, decimal price)
         {
+            // GUID Generation handled here
             Id = Guid.NewGuid();
             Name = name;
             Description = description;
