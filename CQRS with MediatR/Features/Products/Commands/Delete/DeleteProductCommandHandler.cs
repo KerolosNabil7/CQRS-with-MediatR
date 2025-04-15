@@ -8,9 +8,9 @@ namespace CQRS_with_MediatR.Features.Products.Commands.Delete
     public class DeleteProductCommandHandler : IRequestHandler<DeleteProductCommand>
     {
         private readonly AppDbContext _context;
-        public DeleteProductCommandHandler(AppDbContext _context)
+        public DeleteProductCommandHandler(AppDbContext context)
         {
-            _context = _context;
+            _context = context;
         }
         public async Task Handle(DeleteProductCommand command, CancellationToken cancellationToken)
         {
